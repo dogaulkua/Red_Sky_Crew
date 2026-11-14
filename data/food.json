@@ -1,0 +1,40 @@
+{
+ "note": "Food facts for the greenhouse. Every line has a source. Do not add facts without a source.",
+ "sources": {
+  "veggie_2015": {
+   "title": "CBS News — Astronauts chow down on first salad grown in space (Aug 10, 2015)",
+   "url": "https://www.cbsnews.com/news/astronauts-chow-down-on-first-salad-grown-in-space/"
+  },
+  "osd_268": {
+   "title": "NASA OSDR — OSD-268: Microbiological and nutritional analysis of lettuce crops grown on the ISS (VEG-01)",
+   "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-268"
+  },
+  "khodadad_2020": {
+   "title": "Khodadad et al. 2020, Frontiers in Plant Science — lettuce grown on the ISS",
+   "url": "https://www.frontiersin.org/articles/10.3389/fpls.2020.00199/full"
+  }
+ },
+ "greenhouse": [
+  {
+   "speaker": "aylin",
+   "en": "This greenhouse turns Life Support power into food and fresh air. No power, no salad!",
+   "tr": "Bu sera Yaşam Desteği enerjisini yiyeceğe ve temiz havaya çeviriyor. Enerji yoksa salata da yok!",
+   "source": "game_design"
+  },
+  {
+   "speaker": "aylin",
+   "en": "Real NASA: on August 10, 2015, astronauts on the Space Station ate red romaine lettuce they grew themselves in the Veggie garden.",
+   "tr": "Gerçek NASA: 10 Ağustos 2015'te Uzay İstasyonu'ndaki astronotlar Veggie bahçesinde kendi yetiştirdikleri kırmızı marulu yedi.",
+   "source": "veggie_2015"
+  },
+  {
+   "speaker": "aylin",
+   "en": "Scientists checked that space lettuce in NASA's OSDR study OSD-268. It grew for 33 to 56 days, was safe to eat, and was at least as nutritious as Earth lettuce.",
+   "tr": "Bilim insanları o marulu NASA OSDR çalışması OSD-268'de inceledi. 33-56 günde büyüdü, yemesi güvenliydi ve en az Dünya marulu kadar besleyiciydi.",
+   "source": "osd_268"
+  }
+ ],
+ "allocHint": {
+  "en": "air, water & food"
+ }
+}

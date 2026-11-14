@@ -1,0 +1,148 @@
+{
+ "total": 11,
+ "cards": [
+  {
+   "id": "edl",
+   "n": 1,
+   "icon": "🔥",
+   "title": {
+    "en": "Seven Minutes of Terror"
+   },
+   "fact": {
+    "en": "Perseverance entered the Mars atmosphere at about 19,500 km/h on Feb 18, 2021. It slowed down with a heat shield, a 21-metre parachute and a rocket 'sky crane', all on its own, because the signal to Earth took 11.5 minutes."
+   },
+   "source": "PBS NewsHour / NASA (2021)",
+   "url": "https://www.pbs.org/newshour/science/nasas-perseverance-rover-pulls-off-tricky-landing-on-mars"
+  },
+  {
+   "id": "jezero",
+   "n": 2,
+   "icon": "🌊",
+   "title": {
+    "en": "A Lake on Mars"
+   },
+   "fact": {
+    "en": "Jezero Crater once held a lake, fed by a river that left a fan-shaped delta. NASA chose it because ancient lakes are good places to look for signs of past life."
+   },
+   "source": "NASA Mars 2020 Perseverance mission",
+   "url": "https://science.nasa.gov/mission/mars-2020-perseverance/"
+  },
+  {
+   "id": "lettuce",
+   "n": 3,
+   "icon": "🥬",
+   "title": {
+    "en": "Space Salad"
+   },
+   "fact": {
+    "en": "Astronauts on the Space Station ate red romaine lettuce they grew themselves. NASA's OSDR study OSD-268 found that it grew in 33–56 days, was safe to eat and was at least as nutritious as lettuce from Earth."
+   },
+   "source": "NASA OSDR · OSD-268",
+   "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-268"
+  },
+  {
+   "id": "spirit",
+   "n": 4,
+   "icon": "🌪️",
+   "title": {
+    "en": "The Lucky Wind"
+   },
+   "fact": {
+    "en": "On Feb 6, 2009, wind blew dust off NASA's Spirit rover. Its daily power jumped from about 210 to 240 watt-hours, and the sunlight reaching its cells rose from 25% to 28%."
+   },
+   "source": "NASA/JPL Photojournal PIA11799",
+   "url": "https://pds-rings.seti.org/press_releases/pages/PIA11xxx/PIA11799.html"
+  },
+  {
+   "id": "tau",
+   "icon": "🌫️",
+   "title": {
+    "en": "Measuring Darkness"
+   },
+   "fact": {
+    "en": "Opportunity measured the dust in the sky (tau). It is normally about 0.5. On June 10, 2018 it reached 10.8. The rover needed tau below 2 to recharge its batteries."
+   },
+   "source": "NASA/JPL · Opportunity recovery (2018)",
+   "url": "https://www.jpl.nasa.gov/news/six-things-about-opportunitys-recovery-efforts/",
+   "n": 5
+  },
+  {
+   "id": "oppy",
+   "icon": "🤖",
+   "title": {
+    "en": "Goodbye, Oppy"
+   },
+   "fact": {
+    "en": "Opportunity was designed for 90 Martian days and 1 km of driving. It worked for almost 15 years and drove more than 45 km. NASA declared the mission complete on Feb 13, 2019."
+   },
+   "source": "NASA/JPL (2019)",
+   "url": "https://www.jpl.nasa.gov/news/nasas-opportunity-rover-mission-on-mars-comes-to-end/",
+   "n": 6
+  },
+  {
+   "id": "rad",
+   "icon": "☢️",
+   "title": {
+    "en": "Daily Dose"
+   },
+   "fact": {
+    "en": "Curiosity's RAD instrument measures radiation on the Mars surface: about 0.64 mSv per day, because Mars has a thin atmosphere and no global magnetic field."
+   },
+   "source": "NASA PDS · Curiosity RAD (Hassler et al. 2014)",
+   "url": "https://data.nasa.gov/dataset/msl-mars-radiation-assessment-detector-rdr-d9ab6",
+   "n": 7
+  },
+  {
+   "id": "delay",
+   "icon": "📡",
+   "title": {
+    "en": "The Speed of Light Is Too Slow"
+   },
+   "fact": {
+    "en": "Radio messages travel at the speed of light, yet they take 3 to 22 minutes between Earth and Mars. That's why rovers and astronauts must make fast decisions on their own."
+   },
+   "source": "NASA Science · Perseverance communications",
+   "url": "https://science.nasa.gov/missions/mars-2020-perseverance/speaking-percys-language-how-to-talk-so-perseverance-will-listen/",
+   "n": 8
+  },
+  {
+   "id": "sep2017",
+   "icon": "⚡",
+   "title": {
+    "en": "Double Radiation"
+   },
+   "fact": {
+    "en": "In September 2017, a solar storm doubled the radiation on the Mars surface for more than two days. NASA's MAVEN saw an aurora more than 25 times brighter than any before."
+   },
+   "source": "NASA/JPL (2017)",
+   "url": "https://www.jpl.nasa.gov/news/large-solar-storm-sparks-global-aurora-and-doubles-radiation-levels-on-the-martian-surface/",
+   "n": 9
+  },
+  {
+   "id": "may2024",
+   "icon": "🌞",
+   "title": {
+    "en": "30 X-rays at Once"
+   },
+   "fact": {
+    "en": "On May 20, 2024, Curiosity measured 8,100 micrograys from one solar storm, like 30 chest X-rays, the biggest surge since it landed. NASA says cliffs and lava tubes would give astronauts extra shielding."
+   },
+   "source": "NASA/JPL (2024)",
+   "url": "https://www.jpl.nasa.gov/news/nasa-watches-mars-light-up-during-epic-solar-storm",
+   "n": 10
+  },
+  {
+   "id": "donki",
+   "icon": "🛰️",
+   "title": {
+    "en": "NASA's Space Weather Diary"
+   },
+   "fact": {
+    "en": "DONKI is a NASA database that records every solar flare, CME and particle storm. Our game downloads its last 30 days once a day for the 'Today's Real Sun' chapter."
+   },
+   "source": "NASA CCMC · DONKI",
+   "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+   "n": 11
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mars Outpost — NASA Data We Used</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;900&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#05070F;--panel:#0F1730;--line:#2B3A5E;--text:#EEF3FB;--muted:#A9B6CF;--accent:#FF8A3C;--link:#9FD0FF}
+  body{margin:0;background:radial-gradient(ellipse at 50% -10%,#3A1A10,transparent 60%),var(--bg);color:var(--text);font-family:Nunito,system-ui,sans-serif;font-size:17px;line-height:1.5}
+  main{max-width:980px;margin:auto;padding:16px}
+  header{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  h1{flex:1;font-family:"Exo 2","Segoe UI",sans-serif;font-size:clamp(26px,4vw,40px);margin:10px 0}
+  h2{font-family:"Exo 2","Segoe UI",sans-serif;margin:0 0 8px}
+  a{color:var(--link)}
+  .btn{background:#1C2643;color:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:800;text-decoration:none;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;font-size:16px}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:14px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .card{background:linear-gradient(160deg,#1A2B5E,#0B1330);border:1px solid #FFD27A55;border-radius:16px;padding:14px}
+  .card .i{font-size:34px}
+  .card b{display:block;font-family:"Exo 2","Segoe UI",sans-serif;font-size:18px;margin:4px 0}
+  .muted{color:var(--muted);font-size:14px}
+  .tag{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:8px;padding:1px 8px;margin-left:6px;color:var(--muted)}
+  .big{font-family:"Exo 2","Segoe UI",sans-serif;font-size:34px;font-weight:900;color:#FFD27A}
+  li{margin:8px 0}
+</style>
+</head>
+<body>
+<main>
+  <header><h1 id="t"></h1><a class="btn" href="index.html" id="back"></a></header>
+  <p id="intro"></p>
+  <section><h2 id="hLive"></h2><div class="grid">
+    <div class="card"><div class="i">📡</div><b id="dT"></b><div class="big" id="dV"></div><div class="muted" id="dS"></div></div>
+    <div class="card"><div class="i">☀️</div><b id="sT"></b><div class="big" id="sV"></div><div class="muted" id="sS"></div></div>
+  </div></section>
+  <section><h2 id="hCards"></h2><div class="grid" id="cards"></div></section>
+  <section><h2>Where each dataset appears in the game</h2><ul id="mm"></ul></section>
+  <section><h2>For teachers and parents</h2><p>Use the five chapters as short lessons (one Mars constraint each), then let students compare the choices they made and the doses their crews got.
+  More free space activities for classes, clubs and libraries: <a href="https://www.asc-csa.gc.ca/eng/youth-educators/resources-stem-and-youth-organizations.asp" target="_blank" rel="noopener noreferrer">Canadian Space Agency · Space resources for STEM and youth organizations ↗</a>
+  and the <a href="https://www.asc-csa.gc.ca/eng/youth-educators/toolkits/food-production/" target="_blank" rel="noopener noreferrer">CSA food-production toolkit ↗</a>.</p></section>
+  <section><h2 id="hSrc"></h2><ul id="src"></ul></section>
+  <p class="muted" id="honest"></p>
+</main>
+<script type="module">
+import { lightDelayMinutes, earthMarsDistanceAU } from './src/sim.js?v=2026-11-15d';
+import { SRC } from './src/mission.js?v=2026-11-15d';
+const L = {
+  t: { en: 'NASA data we used' }, back: { en: '◂ Back to the game' },
+  intro: { en: 'Every number in Mars Outpost comes from a NASA source, or is clearly marked as a game estimate. Check them yourself!' },
+  hLive: { en: 'Live today' },
+  dT: { en: 'Earth–Mars message delay right now' },
+  dS: { en: 'Computed in your browser from NASA JPL planet orbit elements ({au} AU apart).' },
+  sT: { en: 'Solar events in the last 30 days' },
+  sS: { en: 'From NASA DONKI. Snapshot {date}, updated once a day (not live).' },
+  hCards: { en: 'NASA cards in the game' }, hSrc: { en: 'All sources' },
+  open: { en: 'Open' },
+  kind: { measured: { en: 'NASA measurement' }, game_estimate: { en: 'game estimate' }, game_design: { en: 'game design' } },
+  honest: { en: 'Radiation doses for solar storms are game estimates scaled from Curiosity RAD measurements, so the danger feels right. Real doses depend on place and shielding.' },
+};
+let loc = 'en';
+const t = (o, v = {}) => { let s = o ? (o[loc] ?? o.en) : ''; for (const [a, b] of Object.entries(v)) s = s.replace(`{${a}}`, b); return s; };
+const esc = (x) => String(x ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const get = (u) => fetch(u).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+const [C, G, S] = await Promise.all([get('data/cards.json?v=2026-11-15d'), get('data/game.json?v=2026-11-15d'), fetch('data/donki_latest.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null)]);
+function render() {
+  document.documentElement.lang = loc;
+  for (const k of ['t', 'back', 'intro', 'hLive', 'dT', 'sT', 'hCards', 'hSrc', 'honest']) document.getElementById(k).textContent = t(L[k]);
+  document.getElementById('dV').textContent = `${lightDelayMinutes().toFixed(1)} min`;
+  document.getElementById('dS').textContent = t(L.dS, { au: earthMarsDistanceAU().toFixed(2) });
+  const n = S && S.events ? ['FLR', 'CME', 'SEP', 'GST'].reduce((a, k) => a + (S.events[k] || []).length, 0) : 0;
+  document.getElementById('sV').textContent = n;
+  document.getElementById('sS').textContent = t(L.sS, { date: S ? (S.snapshotDate || '').slice(0, 10) : '—' });
+  document.getElementById('cards').innerHTML = (C ? C.cards : []).map((c) => `<div class="card"><div class="i">${c.icon}</div><b>${esc(t(c.title))}</b><div>${esc(t(c.fact))}</div><div class="muted" style="margin-top:8px"><a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer">${esc(c.source)} ↗</a></div></div>`).join('');
+  document.getElementById('src').innerHTML = G ? Object.values(G.sources).filter((v) => v.url).map((v) => `<li>${esc(v.en)}<span class="tag">${esc(t(L.kind[v.kind]))}</span><br><a href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">${t(L.open)} ↗</a></li>`).join('') : '';
+}
+
+const WHY = {
+  donki: 'Chapter 5: the real solar flares, CMEs, particle storms and geomagnetic storms of the last 30 days. A GitHub Action saves a snapshot once a day.',
+  api: 'Chapter 5 first asks NASA Open APIs (api.nasa.gov), then NASA CCMC, for the last 30 days of solar events, in your browser. Only then does it say “fetched from NASA just now”; otherwise it uses the daily snapshot and says so.',
+  rad: 'Cosmic-ray dose of 0.64 mSv every sol, measured on Mars by Curiosity (Chapters 1, 4 and 5).',
+  may24: 'Chapter 4 uses the dose Curiosity really measured on May 20, 2024.',
+  sep17: 'Chapter 3: the September 2017 storm that doubled radiation on the surface of Mars.',
+  ochmo: 'Why the storm shelter helps a lot against solar storms (~50%) but barely against cosmic rays (~7%), and the 600 mSv career limit (Chapters 3 and 4).',
+  iss: 'Chapter 4 compares the crew’s dose with what Space Station crews get.',
+  radlab: 'Chapter 4 links here: real dosimeter readings from the Space Station (RadLab does not accept requests from web pages, so we link to it).',
+  moxie: 'Chapter 1: the oxygen maker is modelled on MOXIE, which made oxygen from Mars air.',
+  tau: 'Chapter 2: dust in the sky (tau) cuts solar power.', spirit: 'Chapter 1: wind sometimes cleans the panels, as it did for Spirit.',
+  bone: 'Chapter 5: the Exercise job.', radish: 'Chapter 5: the Plant experiment job.', lettuce: 'Greenhouse in Chapter 1.', csa: 'Chapter 5 plant experiment, and classroom activities.',
+  trek: 'Chapter 1: fly over Jezero Crater in real orbital images.',
+  jpl: 'The radio countdown uses today’s real Earth–Mars distance.',
+};
+document.getElementById('mm').innerHTML = Object.entries(SRC).filter(([k]) => WHY[k]).map(([k, v]) => `<li><b>${esc(v.t)}</b><br><span class="muted">${esc(WHY[k] || '')}</span><br><a href="${esc(v.u)}" target="_blank" rel="noopener noreferrer">Open ↗</a></li>`).join('');
+render();
+</script>
+</body>
+</html>

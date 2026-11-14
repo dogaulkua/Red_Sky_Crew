@@ -1,0 +1,577 @@
+{
+ "meta": {
+  "version": 2,
+  "note": "Every number is either from a NASA source (see 'sources') or marked as a game design value. Doses for solar storms are game estimates scaled from Curiosity RAD."
+ },
+ "rules": {
+  "solarMaxUnits": 10,
+  "crew": 4,
+  "o2PerCrew": 3.5,
+  "foodPerCrew": 2.5,
+  "rooms": {
+   "ls": {
+    "max": 4,
+    "perUnit": 7
+   },
+   "gh": {
+    "max": 3,
+    "perUnit": 6
+   },
+   "lab": {
+    "max": 4,
+    "perUnit": 4
+   },
+   "shield": {
+    "max": 3,
+    "perUnit": 0.2
+   }
+  },
+  "baselineDoseMsvPerSol": 0.64,
+  "baselineDoseSource": "rad_baseline",
+  "shelterDoseFactor": 0.25,
+  "dustPerSol": 0.02,
+  "minCleanliness": 0.5,
+  "secondsPerSol": 36,
+  "decisionSeconds": 10,
+  "liveSepDoseMsv": 2.0,
+  "dustTauToEfficiency": [
+   {
+    "tau": 0.5,
+    "eff": 1.0
+   },
+   {
+    "tau": 1.0,
+    "eff": 0.75
+   },
+   {
+    "tau": 2.0,
+    "eff": 0.55
+   },
+   {
+    "tau": 3.0,
+    "eff": 0.45
+   },
+   {
+    "tau": 6.0,
+    "eff": 0.25
+   },
+   {
+    "tau": 10.8,
+    "eff": 0.05
+   }
+  ],
+  "kinds": {
+   "solarMaxUnits": "game_design",
+   "o2PerCrew": "game_design",
+   "foodPerCrew": "game_design",
+   "rooms": "game_design",
+   "baselineDoseMsvPerSol": "measured",
+   "shelterDoseFactor": "game_estimate",
+   "dustPerSol": "game_estimate",
+   "dustTauToEfficiency": "game_estimate"
+  }
+ },
+ "missions": [
+  {
+   "id": "first-sols",
+   "order": 0,
+   "sols": 6,
+   "scienceGoal": 70,
+   "doseLimit": 10,
+   "start": {
+    "o2": 70,
+    "food": 70
+   },
+   "startPower": {
+    "ls": 2,
+    "gh": 2,
+    "lab": 3,
+    "shield": 0
+   },
+   "tutorial": true,
+   "title": {
+    "en": "First Sols"
+   },
+   "difficulty": {
+    "en": "Training"
+   },
+   "story": {
+    "en": "You just landed at Jezero Crater. Your solar panels make 12 power units. Your crew needs air and food, and Earth wants science. There is not enough power for everything. You decide."
+   },
+   "danger": {
+    "en": "A local dust storm arrives on sol 3. You will have 10 seconds to decide what to do with the panels."
+   },
+   "events": [
+    {
+     "id": "dust_devil",
+     "type": "DUST_DEVIL",
+     "at": 1.2,
+     "source": "spirit_2009"
+    },
+    {
+     "id": "local_storm",
+     "type": "DUST_STORM",
+     "decision": "storm",
+     "at": 2.3,
+     "warnAt": 1.8,
+     "duration": 1.6,
+     "source": "game_design"
+    }
+   ]
+  },
+  {
+   "id": "dust-2018",
+   "order": 1,
+   "sols": 10,
+   "scienceGoal": 28,
+   "doseLimit": 12,
+   "start": {
+    "o2": 60,
+    "food": 60
+   },
+   "startPower": {
+    "ls": 2,
+    "gh": 2,
+    "lab": 3,
+    "shield": 0
+   },
+   "tauBySol": [
+    0.6,
+    1.0,
+    2.0,
+    3.6,
+    6.0,
+    10.8,
+    10.8,
+    6.0,
+    3.0,
+    1.8
+   ],
+   "tauSource": "opportunity_2018",
+   "title": {
+    "en": "The Storm That Covered Mars (2018)"
+   },
+   "difficulty": {
+    "en": "Medium"
+   },
+   "story": {
+    "en": "June 2018. A dust storm is growing until it covers the whole planet. NASA's Opportunity rover measured the sky getting darker every day. Its solar panels could not make enough power, and it went silent on June 10."
+   },
+   "danger": {
+    "en": "Your power will drop to almost nothing for several sols. Save air and food before the dark days come."
+   },
+   "events": [
+    {
+     "id": "tau_notice",
+     "type": "NOTICE",
+     "at": 3.05,
+     "text": "tau_dark",
+     "source": "opportunity_2018"
+    },
+    {
+     "id": "tau_peak",
+     "type": "NOTICE",
+     "at": 5.05,
+     "text": "tau_peak",
+     "source": "opportunity_2018"
+    },
+    {
+     "id": "tau_clear",
+     "type": "NOTICE",
+     "at": 9.05,
+     "text": "tau_clear",
+     "source": "opportunity_2018"
+    }
+   ]
+  },
+  {
+   "id": "sept-2017",
+   "order": 2,
+   "sols": 8,
+   "scienceGoal": 80,
+   "doseLimit": 6,
+   "start": {
+    "o2": 70,
+    "food": 70
+   },
+   "startPower": {
+    "ls": 2,
+    "gh": 2,
+    "lab": 3,
+    "shield": 0
+   },
+   "title": {
+    "en": "The Flare That Lit Up Mars (Sept 2017)"
+   },
+   "difficulty": {
+    "en": "Medium"
+   },
+   "story": {
+    "en": "September 2017. The Sun is quiet... until a giant X8.2 flare explodes. Curiosity measured radiation on the ground more than twice as high as ever before, and MAVEN saw an aurora 25 times brighter than usual."
+   },
+   "danger": {
+    "en": "Earth will warn you about the flare, but the message takes minutes to arrive. When the particles hit, you have 10 seconds to send everyone to the shelter."
+   },
+   "events": [
+    {
+     "id": "flare_2017",
+     "type": "NOTICE",
+     "at": 2.6,
+     "text": "flare_2017",
+     "fromEarth": true,
+     "source": "rad_sep2017",
+     "real": {
+      "date": "2017-09-10",
+      "donkiQuery": {
+       "type": "FLR",
+       "classType": "X8.2"
+      }
+     }
+    },
+    {
+     "id": "sep_2017",
+     "type": "SEP",
+     "decision": "sep",
+     "at": 3.2,
+     "duration": 2,
+     "doseMsv": 6.0,
+     "doseKind": "game_estimate",
+     "source": "rad_sep2017",
+     "real": {
+      "date": "2017-09-11"
+     }
+    },
+    {
+     "id": "aurora_2017",
+     "type": "CME",
+     "at": 4.2,
+     "duration": 0.6,
+     "doseMsv": 0.3,
+     "doseKind": "game_estimate",
+     "source": "rad_sep2017"
+    }
+   ]
+  },
+  {
+   "id": "may-2024",
+   "order": 3,
+   "sols": 10,
+   "scienceGoal": 110,
+   "doseLimit": 15,
+   "start": {
+    "o2": 70,
+    "food": 70
+   },
+   "startPower": {
+    "ls": 2,
+    "gh": 2,
+    "lab": 3,
+    "shield": 0
+   },
+   "title": {
+    "en": "The Great Solar Storm (May 2024)"
+   },
+   "difficulty": {
+    "en": "Hard"
+   },
+   "story": {
+    "en": "May 2024. Sunspot region AR 3664 gave Earth its strongest storm in 20 years. Then it turned toward Mars. On May 20 Curiosity measured 8,100 micrograys in one blast: like 30 chest X-rays, or 37 normal days on Mars."
+   },
+   "danger": {
+    "en": "The biggest radiation blast Curiosity ever measured. Without the shelter, nobody can survive it."
+   },
+   "events": [
+    {
+     "id": "gst_2024",
+     "type": "NOTICE",
+     "at": 1.4,
+     "text": "gst_2024",
+     "fromEarth": true,
+     "source": "may2024_wiki",
+     "real": {
+      "date": "2024-05-10"
+     }
+    },
+    {
+     "id": "flare_2024",
+     "type": "NOTICE",
+     "at": 5.8,
+     "text": "flare_2024",
+     "fromEarth": true,
+     "source": "rad_may2024",
+     "real": {
+      "date": "2024-05-20"
+     }
+    },
+    {
+     "id": "sep_2024",
+     "type": "SEP",
+     "decision": "sep",
+     "at": 6.3,
+     "duration": 1,
+     "doseMsv": 23.7,
+     "doseKind": "game_estimate",
+     "source": "rad_may2024",
+     "real": {
+      "date": "2024-05-20"
+     }
+    },
+    {
+     "id": "aurora_2024",
+     "type": "CME",
+     "at": 7.2,
+     "duration": 0.6,
+     "doseMsv": 0.3,
+     "doseKind": "game_estimate",
+     "source": "rad_may2024"
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "order": 4,
+   "sols": 10,
+   "scienceGoal": 100,
+   "doseLimit": 12,
+   "live": true,
+   "start": {
+    "o2": 70,
+    "food": 70
+   },
+   "startPower": {
+    "ls": 2,
+    "gh": 2,
+    "lab": 3,
+    "shield": 0
+   },
+   "title": {
+    "en": "Today's Real Sun"
+   },
+   "difficulty": {
+    "en": "Changes every day"
+   },
+   "story": {
+    "en": "This mission is made from the REAL Sun: every solar flare, particle storm and CME that NASA's DONKI database recorded in the last 30 days happens to your base. Updated once a day."
+   },
+   "danger": {
+    "en": "Nobody knows! It depends on what the Sun really did."
+   },
+   "events": []
+  }
+ ],
+ "decisions": {
+  "storm": {
+   "title": {
+    "en": "Dust storm! Panels in danger!"
+   },
+   "speaker": "deniz",
+   "line": {
+    "en": "Commander, the dust wall is here! Do we fold the solar panels or leave them out?"
+   },
+   "choices": [
+    {
+     "id": "fold",
+     "label": {
+      "en": "Fold the panels"
+     },
+     "hint": {
+      "en": "Less power during the storm, but panels stay clean after."
+     },
+     "effect": {
+      "stormEff": 0.35,
+      "afterEff": 1.0
+     }
+    },
+    {
+     "id": "leave",
+     "label": {
+      "en": "Leave them out"
+     },
+     "hint": {
+      "en": "More power now, but dust sticks to them for the rest of the mission."
+     },
+     "effect": {
+      "stormEff": 0.6,
+      "afterEff": 0.65
+     }
+    }
+   ],
+   "timeout": {
+    "effect": {
+     "stormEff": 0.5,
+     "afterEff": 0.6
+    }
+   },
+   "after": {
+    "fold": {
+     "en": "Panels folded! We'll be in the dark for a bit, but they'll shine like new."
+    },
+    "leave": {
+     "en": "Panels stay out. We keep some power, but dust is sticking to them."
+    },
+    "timeout": {
+     "en": "Too late! The storm half-folded the panels on its own. Some dust got stuck."
+    }
+   }
+  },
+  "sep": {
+   "title": {
+    "en": "Radiation storm! Particles arriving!"
+   },
+   "speaker": "kerem",
+   "line": {
+    "en": "Solar particles are hitting the base! Everyone to the shelter, or keep working?"
+   },
+   "choices": [
+    {
+     "id": "shelter",
+     "label": {
+      "en": "Everyone to the shelter!"
+     },
+     "hint": {
+      "en": "Dose ×0.25. The lab and greenhouse stop while you wait."
+     },
+     "effect": {
+      "shelter": true
+     }
+    },
+    {
+     "id": "stay",
+     "label": {
+      "en": "Keep working"
+     },
+     "hint": {
+      "en": "Science keeps going, but the crew takes the full dose."
+     },
+     "effect": {}
+    }
+   ],
+   "timeout": {
+    "effect": {}
+   },
+   "after": {
+    "shelter": {
+     "en": "Everyone is in the shelter. Rock and water walls stop most of the particles."
+    },
+    "stay": {
+     "en": "We keep working... I'll watch the dose meter very closely."
+    },
+    "timeout": {
+     "en": "No order came, so everyone stayed at work. That was a lot of radiation."
+    }
+   }
+  }
+ },
+ "notices": {
+  "storm_warn": {
+   "en": "I can see a brown wall on the horizon. A dust storm is coming!"
+  },
+  "sep_warn": {
+   "en": "Earth says the Sun just flared. Particles may follow!"
+  },
+  "dust_devil": {
+   "en": "A dust devil just swept over our panels and blew the dust away! NASA's Spirit rover got lucky like this too: in Feb 2009 its power jumped from 210 to 240 watt-hours."
+  },
+  "tau_dark": {
+   "en": "The sky is getting darker. Opportunity measured the dust thickness (tau) jumping from about 0.5 to over 3 in a few days."
+  },
+  "tau_peak": {
+   "en": "Tau is 10.8, the darkest Opportunity ever saw. It needed tau below 2 to recharge. Hold on!"
+  },
+  "tau_clear": {
+   "en": "The dust is settling! Tau is under 2 again and the panels are waking up."
+  },
+  "flare_2017": {
+   "en": "Message from Earth: an X8.2 flare exploded on the Sun! Particles are on their way to Mars."
+  },
+  "gst_2024": {
+   "en": "Message from Earth: the strongest geomagnetic storm in 20 years is lighting up Earth's skies. That sunspot will face Mars soon."
+  },
+  "flare_2024": {
+   "en": "Message from Earth: a huge flare (about X12) from the far side of the Sun. It points right at Mars!"
+  },
+  "live_flare": {
+   "en": "Message from Earth: an X-class flare was recorded on the real Sun on {date}."
+  },
+  "aurora": {
+   "en": "Look up! The particles are making an aurora in the Mars sky!"
+  },
+  "shed": {
+   "en": "Power dropped! I had to unplug some rooms. Check the power again!"
+  },
+  "low_o2": {
+   "en": "Air is getting low! Give Life Support more power!"
+  },
+  "low_food": {
+   "en": "Food is running low! The greenhouse needs power."
+  },
+  "high_dose": {
+   "en": "Radiation dose is getting high. More shield power would help."
+  },
+  "live_calm": {
+   "en": "Good news: NASA's DONKI recorded no big particle storms in the last 30 days. The real Sun was calm!"
+  }
+ },
+ "sources": {
+  "rad_baseline": {
+   "en": "Curiosity RAD (NASA PDS dataset): about 0.64 mSv per day on the Mars surface (Hassler et al. 2014)",
+   "url": "https://data.nasa.gov/dataset/msl-mars-radiation-assessment-detector-rdr-d9ab6",
+   "kind": "measured"
+  },
+  "rad_sep2017": {
+   "en": "NASA/JPL: Large solar storm sparks global aurora and doubles radiation levels on the Martian surface (Sept 2017)",
+   "url": "https://www.jpl.nasa.gov/news/large-solar-storm-sparks-global-aurora-and-doubles-radiation-levels-on-the-martian-surface/",
+   "kind": "measured"
+  },
+  "rad_may2024": {
+   "en": "NASA/JPL: NASA watches Mars light up during epic solar storm (May 2024, 8,100 micrograys)",
+   "url": "https://www.jpl.nasa.gov/news/nasa-watches-mars-light-up-during-epic-solar-storm",
+   "kind": "measured"
+  },
+  "may2024_wiki": {
+   "en": "May 2024 solar storms: strongest geomagnetic storm at Earth since 2003 (G5)",
+   "url": "https://en.wikipedia.org/wiki/May_2024_solar_storms",
+   "kind": "measured"
+  },
+  "opportunity_2018": {
+   "en": "NASA/JPL: Six things about Opportunity's recovery efforts (tau 10.8; needs tau below 2)",
+   "url": "https://www.jpl.nasa.gov/news/six-things-about-opportunitys-recovery-efforts/",
+   "kind": "measured"
+  },
+  "spirit_2009": {
+   "en": "NASA/JPL PIA11799: Spirit's power rose from about 210 to 240 watt-hours after dust blew off its panels (Feb 6, 2009)",
+   "url": "https://photojournal.jpl.nasa.gov/catalog/PIA11799",
+   "kind": "measured"
+  },
+  "comm_delay": {
+   "en": "NASA Science: commands take 3 to 22 minutes to reach Mars",
+   "url": "https://science.nasa.gov/missions/mars-2020-perseverance/speaking-percys-language-how-to-talk-so-perseverance-will-listen/",
+   "kind": "measured"
+  },
+  "jpl_orbits": {
+   "en": "NASA JPL Solar System Dynamics: Approximate Positions of the Planets (used to compute today's Earth–Mars distance)",
+   "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+   "kind": "measured"
+  },
+  "donki": {
+   "en": "NASA DONKI Space Weather Database (CCMC), daily snapshot of the last 30 days",
+   "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+   "kind": "measured"
+  },
+  "osd_268": {
+   "en": "NASA OSDR OSD-268: lettuce grown on the ISS (VEG-01) was safe and nutritious",
+   "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-268",
+   "kind": "measured"
+  },
+  "career_limit": {
+   "en": "NASA OCHMO: 600 mSv career radiation limit for astronauts",
+   "url": "https://www.nasa.gov/wp-content/uploads/2023/03/radiation-protection-technical-brief-ochmo.pdf",
+   "kind": "measured"
+  },
+  "game_design": {
+   "en": "Game design value (not NASA data), chosen so every choice has a cost",
+   "url": "",
+   "kind": "game_design"
+  }
+ }
+}

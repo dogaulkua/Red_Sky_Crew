@@ -1,0 +1,1031 @@
+{
+ "subtitle": {
+  "en": "Red Sky Chronicles"
+ },
+ "title_tag": {
+  "en": "A story of survival on Mars, built from real NASA data."
+ },
+ "create_id": {
+  "en": "Create your astronaut"
+ },
+ "call_sign": {
+  "en": "Call sign"
+ },
+ "call_sign_ph": {
+  "en": "e.g. RedFalcon"
+ },
+ "privacy": {
+  "en": "Use a nickname, not your real name. Saved only on this device. No account, no email."
+ },
+ "face": {
+  "en": "Face"
+ },
+ "suit_color": {
+  "en": "Suit colour"
+ },
+ "create_go": {
+  "en": "Join the mission ▸"
+ },
+ "need_name": {
+  "en": "Type a call sign (2–14 letters)."
+ },
+ "id_card": {
+  "en": "MARS OUTPOST · ASTRONAUT ID"
+ },
+ "commander": {
+  "en": "Commander"
+ },
+ "launch": {
+  "en": "LAUNCH ▸"
+ },
+ "edit_id": {
+  "en": "Edit astronaut"
+ },
+ "nasa_data": {
+  "en": "NASA data we used"
+ },
+ "chapters": {
+  "en": "Chapters"
+ },
+ "tap_continue": {
+  "en": "tap to continue"
+ },
+ "rotate": {
+  "en": "Turn your phone sideways to play"
+ },
+ "glossary": {
+  "en": "Space word"
+ },
+ "close": {
+  "en": "Close"
+ },
+ "continue": {
+  "en": "Continue ▸"
+ },
+ "new_card": {
+  "en": "NEW NASA CARD"
+ },
+ "nasa_card": {
+  "en": "REAL NASA SCIENCE"
+ },
+ "source": {
+  "en": "Source"
+ },
+ "collect": {
+  "en": "Add to collection ✓"
+ },
+ "settings": {
+  "en": "Settings"
+ },
+ "set_music": {
+  "en": "Music"
+ },
+ "set_sfx": {
+  "en": "Sound effects"
+ },
+ "set_voice": {
+  "en": "Character voices"
+ },
+ "set_rate": {
+  "en": "Voice speed"
+ },
+ "set_font": {
+  "en": "Text size"
+ },
+ "set_shake": {
+  "en": "Screen shake"
+ },
+ "language": {
+  "en": "Language"
+ },
+ "day": {
+  "en": "Day"
+ },
+ "m_air": {
+  "en": "Air"
+ },
+ "m_food": {
+  "en": "Food"
+ },
+ "m_power": {
+  "en": "Power"
+ },
+ "m_shield": {
+  "en": "Shield"
+ },
+ "m_science": {
+  "en": "Science"
+ },
+ "m_air_g_t": {
+  "en": "Air"
+ },
+ "m_air_g": {
+  "en": "Oxygen and water for the crew. Life Support makes it with power. If it reaches 0, the mission fails."
+ },
+ "m_food_g_t": {
+  "en": "Food"
+ },
+ "m_food_g": {
+  "en": "Food grown in the greenhouse. Plants need light (power) and water."
+ },
+ "m_power_g_t": {
+  "en": "Power"
+ },
+ "m_power_g": {
+  "en": "Units of electricity from the solar panels each sol. Dust makes the panels weaker."
+ },
+ "m_shield_g_t": {
+  "en": "Shield"
+ },
+ "m_shield_g": {
+  "en": "Radiation shield power. More shield means less radiation for the crew."
+ },
+ "m_science_g_t": {
+  "en": "Science"
+ },
+ "m_science_g": {
+  "en": "Discoveries your crew makes in the lab. It's why you came to Mars."
+ },
+ "g_sol_t": {
+  "en": "Sol"
+ },
+ "g_sol": {
+  "en": "A sol is one day on Mars: 24 hours and 39 minutes, a little longer than a day on Earth."
+ },
+ "g_heat_t": {
+  "en": "Heat shield"
+ },
+ "g_heat": {
+  "en": "A thick shell under the capsule. Air rubbing against it at huge speed makes it glow hot, and it protects everything inside."
+ },
+ "g_delay_t": {
+  "en": "Signal delay"
+ },
+ "g_delay": {
+  "en": "Radio travels at the speed of light, but Mars is so far away that a message takes 3 to 22 minutes, depending on where the planets are."
+ },
+ "g_jezero_t": {
+  "en": "Jezero Crater"
+ },
+ "g_jezero": {
+  "en": "A crater on Mars that once held a lake, with an old river delta. NASA's Perseverance rover landed here in 2021."
+ },
+ "g_eva_t": {
+  "en": "EVA"
+ },
+ "g_eva": {
+  "en": "Extravehicular activity: going outside in a spacesuit. Outside, there are no walls to block radiation."
+ },
+ "g_dustdevil_t": {
+  "en": "Dust devil"
+ },
+ "g_dustdevil": {
+  "en": "A spinning column of wind and dust. On Mars they can be taller than skyscrapers, and sometimes they blow dust off solar panels."
+ },
+ "tel_speed": {
+  "en": "SPEED"
+ },
+ "tel_alt": {
+  "en": "ALTITUDE"
+ },
+ "ph_entry": {
+  "en": "ENTERING THE ATMOSPHERE"
+ },
+ "ph_chute": {
+  "en": "PARACHUTE OPEN"
+ },
+ "ph_rockets": {
+  "en": "LANDING ROCKETS"
+ },
+ "ph_touchdown": {
+  "en": "TOUCHDOWN!"
+ },
+ "room_ls": {
+  "en": "Life Support"
+ },
+ "room_gh": {
+  "en": "Greenhouse"
+ },
+ "room_lab": {
+  "en": "Lab"
+ },
+ "room_shield": {
+  "en": "Shield"
+ },
+ "room_comms": {
+  "en": "Comms"
+ },
+ "no_power": {
+  "en": "No free power left. Tap a room to unplug a cable first."
+ },
+ "room_full": {
+  "en": "This room is full."
+ },
+ "ch1_num": {
+  "en": "1"
+ },
+ "c1_kicker": {
+  "en": "CHAPTER 1"
+ },
+ "c1_title": {
+  "en": "Landing at Jezero"
+ },
+ "c1_sub": {
+  "en": "Jezero Crater, Mars · Your crew's first sols"
+ },
+ "c1_tagline": {
+  "en": "Land, wake the base, grow the first food."
+ },
+ "c1_d1": {
+  "en": "Entering the Mars atmosphere at almost 20,000 km/h! The [[heat shield|heat]] is glowing hotter than lava."
+ },
+ "c1_d2": {
+  "en": "Earth can't help us now. Our signal takes {min} minutes to reach them, so we land on our own. NASA calls this the 'seven minutes of terror'."
+ },
+ "c1_d3": {
+  "en": "Engines... landing legs... hold on, Commander!"
+ },
+ "c1_l1": {
+  "en": "Touchdown! Welcome to [[Jezero Crater|jezero]], Commander {name}. Billions of years ago, this was a lake."
+ },
+ "c1_l2": {
+  "en": "Where there was water, there might have been life. Finding out is our job."
+ },
+ "c1_l3": {
+  "en": "But first things first. The base is still asleep. No power means no air, and the suits only last a few hours."
+ },
+ "c1_l4": {
+  "en": "I'm NOVA, the base's AI. Our solar panels make 10 power units every [[sol]]. The rooms want more than that. You decide who gets power."
+ },
+ "c1_obj_wake": {
+  "en": "Wake the base: share all 10 ⚡ between the rooms"
+ },
+ "c1_w1": {
+  "en": "Drag a glowing cable from the yellow ⚡ hub into a room. Each cable is 1 unit. Tap a room to take a cable back."
+ },
+ "tip_ls": {
+  "en": "Life Support makes air and water. Four people breathe 14 air every sol, and each cable makes 7. So it needs at least 2."
+ },
+ "tip_gh": {
+  "en": "The greenhouse grows food. The crew eats 10 food every sol, and each cable makes 6."
+ },
+ "tip_lab": {
+  "en": "The lab is where discoveries happen. Each cable makes 4 science per sol."
+ },
+ "tip_shield": {
+  "en": "The shield blocks radiation. Each cable stops 20% of it. Mars has a thin atmosphere and no global magnetic field, so radiation is stronger here."
+ },
+ "tip_comms": {
+  "en": "Comms keeps our link with Earth. Without it, nobody hears us and no warnings reach us."
+ },
+ "w_preview": {
+  "en": "Per sol"
+ },
+ "w_air": {
+  "en": "Air"
+ },
+ "w_food": {
+  "en": "Food"
+ },
+ "w_sci": {
+  "en": "Science"
+ },
+ "w_shield": {
+  "en": "Radiation blocked"
+ },
+ "w_free": {
+  "en": "Free"
+ },
+ "w_confirm": {
+  "en": "Turn the base on ▸"
+ },
+ "w_need_all": {
+  "en": "Use all 10 cables. Power you don't use is wasted."
+ },
+ "w_need_air": {
+  "en": "Air would run out! Life Support needs at least 2 cables."
+ },
+ "w_need_food": {
+  "en": "Food would run out! The greenhouse needs at least 2 cables."
+ },
+ "w_need_comms": {
+  "en": "Connect Comms, or Earth can't reach us."
+ },
+ "c1_w_done": {
+  "en": "The base is alive! Did you notice? There wasn't enough power for every room. Real Mars missions face this every day."
+ },
+ "c1_obj_green": {
+  "en": "Grow the first food"
+ },
+ "c1_g1": {
+  "en": "Time to plant! Red romaine lettuce, the same kind astronauts grew and ate on the Space Station in 2015."
+ },
+ "c1_g2": {
+  "en": "Plants need light and water. More light costs power, and water comes out of Life Support. Too much water and the roots can't breathe."
+ },
+ "g_light": {
+  "en": "Grow lights"
+ },
+ "g_water": {
+  "en": "Water"
+ },
+ "g_grow": {
+  "en": "Grow for 33 days ▸"
+ },
+ "c1_g_great": {
+  "en": "Look at them! Big, healthy and red. That's a real harvest."
+ },
+ "c1_g_ok": {
+  "en": "Not bad! A bit small, but it's food. Next time we can balance light and water better."
+ },
+ "c1_g_bad": {
+  "en": "Hmm, they struggled. Plants are like us: they need the right amount, not the most."
+ },
+ "c1_obj_night": {
+  "en": "Sol 1, night: protect the power"
+ },
+ "c1_n1": {
+  "en": "Commander, bad news. Dust has settled on the solar panels. We're down to 8 power."
+ },
+ "c1_n2": {
+  "en": "I could go out on an [[EVA|eva]] and brush them clean. But outside there are no walls between me and the radiation."
+ },
+ "c1_q": {
+  "en": "What do you do?"
+ },
+ "c1_c_eva": {
+  "en": "Send Deniz outside"
+ },
+ "c1_c_eva_h": {
+  "en": "The panels are clean right away, but Deniz takes extra radiation and uses suit air."
+ },
+ "c1_c_wait": {
+  "en": "Wait for the wind"
+ },
+ "c1_c_wait_h": {
+  "en": "Nobody goes outside, but the lab gets less power tonight. Wind might clean the panels... or not."
+ },
+ "c1_eva_done": {
+  "en": "Panels clean! It's freezing out here, and my dose meter clicked a bit. Coming back in."
+ },
+ "c1_wait_done": {
+  "en": "We're waiting. The lab is running on half power tonight."
+ },
+ "c1_devil1": {
+  "en": "Wait... look outside! A [[dust devil|dustdevil]] is heading for the panels!"
+ },
+ "c1_devil2": {
+  "en": "It swept the dust right off! NASA's Spirit rover got lucky like this too. In February 2009, its power jumped from about 210 to 240 watt-hours in one day."
+ },
+ "c1_end1": {
+  "en": "Sol 1 complete. We landed, the base is alive, and we have food growing. Not bad for a first day on Mars, Commander."
+ },
+ "c1_end2": {
+  "en": "But I'm watching the horizon. The dust is getting thicker every day. Something big is coming."
+ },
+ "end_title": {
+  "en": "CHAPTER COMPLETE"
+ },
+ "end_stars": {
+  "en": "Your stars"
+ },
+ "c1_s1": {
+  "en": "Landed and woke the base"
+ },
+ "c1_s2": {
+  "en": "Grew a healthy harvest"
+ },
+ "c1_s3": {
+  "en": "Kept everyone safe (no extra radiation)"
+ },
+ "end_cards": {
+  "en": "NASA cards found"
+ },
+ "end_real": {
+  "en": "🔭 What really happened?"
+ },
+ "c1_real": {
+  "en": "On February 18, 2021, NASA's Perseverance rover hit the Mars atmosphere at about 19,500 km/h and landed in Jezero Crater on its own. Its 'we've landed' signal took about 11.5 minutes to reach Earth."
+ },
+ "next_ch": {
+  "en": "Next: Chapter 2 · The Dust Wall (2018)"
+ },
+ "to_map": {
+  "en": "Chapters"
+ },
+ "replay": {
+  "en": "Play again"
+ },
+ "coming": {
+  "en": "Coming soon"
+ },
+ "c2_title": {
+  "en": "The Dust Wall"
+ },
+ "c2_tagline": {
+  "en": "June 2018 · The storm that silenced Opportunity"
+ },
+ "c3_title": {
+  "en": "The Late Warning"
+ },
+ "c3_tagline": {
+  "en": "Sept 2017 · An X8.2 flare and an 11-minute delay"
+ },
+ "c4_title": {
+  "en": "The Biggest Storm"
+ },
+ "c4_tagline": {
+  "en": "May 2024 · Kerem is outside when the warning comes"
+ },
+ "c5_title": {
+  "en": "Today's Real Sun"
+ },
+ "c5_tagline": {
+  "en": "Real NASA DONKI data · updated daily"
+ },
+ "ph_engines": {
+  "en": "ENGINES ON"
+ },
+ "ph_legs": {
+  "en": "LANDING LEGS OUT"
+ },
+ "set_blips": {
+  "en": "Talk sounds (when no voice)"
+ },
+ "tap_start": {
+  "en": "TAP TO START"
+ },
+ "game_title": {
+  "en": "Mars Colony: Command Center"
+ },
+ "pick_chapter": {
+  "en": "Choose a mission"
+ },
+ "all_open": {
+  "en": "All chapters are open. Recommended: play them in order."
+ },
+ "recommended": {
+  "en": "▶ Next"
+ },
+ "play": {
+  "en": "Play ▸"
+ },
+ "fail_title": {
+  "en": "MISSION LOST"
+ },
+ "fail_air": {
+  "en": "The air ran out. In a dust storm, Life Support must come first."
+ },
+ "fail_food": {
+  "en": "The food ran out. The greenhouse needed more."
+ },
+ "fail_dose": {
+  "en": "The crew got too much radiation. Shelters and shields protect them."
+ },
+ "try_again": {
+  "en": "Try again"
+ },
+ "g_tau_t": {
+  "en": "Tau (dust thickness)"
+ },
+ "g_tau": {
+  "en": "Tau tells how much dust blocks the Sun. On a clear Mars day it is about 0.5. Above 2, solar panels struggle. In June 2018 it reached 10.8."
+ },
+ "g_sep_t": {
+  "en": "Solar particle storm"
+ },
+ "g_sep": {
+  "en": "After a big flare, the Sun can throw out a storm of fast particles. Mars has a thin atmosphere and no global magnetic field, so more of them reach the ground."
+ },
+ "g_msv_t": {
+  "en": "mSv"
+ },
+ "g_msv": {
+  "en": "mSv (millisievert) measures how much radiation a body takes in. NASA keeps an astronaut's whole career under 600 mSv."
+ },
+ "g_flare_t": {
+  "en": "Solar flare"
+ },
+ "g_flare": {
+  "en": "A sudden flash of energy on the Sun. Flares are ranked C, M and X; X is the strongest. An X8.2 is a very big one."
+ },
+ "g_aurora_t": {
+  "en": "Aurora"
+ },
+ "g_aurora": {
+  "en": "Glowing lights in the sky made when solar particles hit the air. On Earth they stay near the poles; on Mars they can cover the whole planet."
+ },
+ "delay_title": {
+  "en": "Message from Earth on its way"
+ },
+ "delay_sub": {
+  "en": "Real Earth–Mars light delay today: {min} min. In the game, 1 minute = 1 second."
+ },
+ "delay_arrived": {
+  "en": "📡 Message received!"
+ },
+ "c2_kicker": {
+  "en": "CHAPTER 2"
+ },
+ "c2_sub": {
+  "en": "June 2018 · The storm that covered Mars"
+ },
+ "c2_l1": {
+  "en": "Commander, look at the horizon. The sky is getting darker every hour."
+ },
+ "c2_l2": {
+  "en": "I measured the dust. [[Tau|tau]] jumped from 0.5 to over 3 in just a few days. That is exactly what NASA's Opportunity rover saw in June 2018."
+ },
+ "c2_l3": {
+  "en": "This is a planet-wide storm. Our solar panels will make less and less power. We must decide fast."
+ },
+ "c2_q1": {
+  "en": "The dust wall is here! Fold the solar panels?"
+ },
+ "c2_fold": {
+  "en": "Fold the panels"
+ },
+ "c2_fold_h": {
+  "en": "Only 4 power during the storm, but the panels stay clean for later."
+ },
+ "c2_leave": {
+  "en": "Leave them out"
+ },
+ "c2_leave_h": {
+  "en": "6 power now, but dust sticks and the panels stay weaker forever."
+ },
+ "c2_timeout": {
+  "en": "No order came... the panels are half covered. 5 power."
+ },
+ "c2_w1": {
+  "en": "Storm mode! There isn't enough power for every room. Air comes first: give Life Support at least 2."
+ },
+ "c2_obj_wake": {
+  "en": "Storm power: share {n} ⚡"
+ },
+ "c2_obj_dark": {
+  "en": "Survive the dark sols"
+ },
+ "c2_night": {
+  "en": "Sol {n} · Tau {tau}"
+ },
+ "c2_r1": {
+  "en": "Tau is 6 now. The panels are barely working. We need to save something."
+ },
+ "c2_r2": {
+  "en": "Tau 10.8! This is the darkest it got for Opportunity. It needed tau below 2 to recharge."
+ },
+ "c2_r3": {
+  "en": "Still dark, but I think the dust is starting to settle. One more night."
+ },
+ "c2_o_lab": {
+  "en": "Turn off the lab"
+ },
+ "c2_o_lab_h": {
+  "en": "Science stops, but that power keeps the air flowing."
+ },
+ "c2_o_lights": {
+  "en": "Dim the grow lights"
+ },
+ "c2_o_lights_h": {
+  "en": "Plants grow slower, but we save power for air."
+ },
+ "c2_o_keep": {
+  "en": "Keep everything on"
+ },
+ "c2_o_keep_h": {
+  "en": "Nothing stops... but the batteries drain fast."
+ },
+ "c2_o_huddle": {
+  "en": "Everyone in one room"
+ },
+ "c2_o_huddle_h": {
+  "en": "Heat and air only for one room. Less work gets done."
+ },
+ "c2_o_eva": {
+  "en": "Send Deniz to brush the panels"
+ },
+ "c2_o_eva_h": {
+  "en": "A little more power, but walking in a dust storm is dangerous."
+ },
+ "c2_o_snacks": {
+  "en": "Eat the emergency food"
+ },
+ "c2_o_snacks_h": {
+  "en": "Keeps the crew going, but the food reserve gets small."
+ },
+ "c2_o_battery": {
+  "en": "Use the emergency battery"
+ },
+ "c2_o_battery_h": {
+  "en": "Plenty of air tonight. The battery will be empty for the next storm."
+ },
+ "c2_o_minimal": {
+  "en": "Life support only"
+ },
+ "c2_o_minimal_h": {
+  "en": "Lights off, lab off, greenhouse off. Cold and dark, but safe air."
+ },
+ "c2_o_msg": {
+  "en": "Send a message to Earth"
+ },
+ "c2_o_msg_h": {
+  "en": "Costs a little power. Earth will hear you in {min} minutes."
+ },
+ "c2_eva_line": {
+  "en": "It's like walking inside a brown cloud. Panels brushed... coming back!"
+ },
+ "c2_clear1": {
+  "en": "Look! Sunlight! Tau is under 2 again. The panels are waking up."
+ },
+ "c2_clear2": {
+  "en": "We made it. Opportunity was not so lucky. It went silent on June 10, 2018. NASA sent more than a thousand commands for eight months, and on February 13, 2019, they said goodbye."
+ },
+ "c2_clear3": {
+  "en": "It was built for 90 sols and lasted almost 15 years. It drove more than 45 kilometres."
+ },
+ "c2_s1": {
+  "en": "Survived the storm"
+ },
+ "c2_s2": {
+  "en": "Air and food above 40"
+ },
+ "c2_s3": {
+  "en": "No one walked in the storm"
+ },
+ "c2_real": {
+  "en": "From late May to June 2018, a dust storm grew until it covered all of Mars. Opportunity measured tau 10.8 and lost power. Its last signal came on June 10, 2018."
+ },
+ "c2_next": {
+  "en": "Next: Chapter 3 · The Late Warning (2017)"
+ },
+ "c3_kicker": {
+  "en": "CHAPTER 3"
+ },
+ "c3_sub": {
+  "en": "September 2017 · A message that travels at the speed of light"
+ },
+ "c3_l1": {
+  "en": "Quiet night. My dose meter says we get about 0.64 [[mSv|msv]] every sol here. Curiosity measured that."
+ },
+ "c3_l2": {
+  "en": "That's more than on Earth, because Mars has a thin atmosphere and no global magnetic field to protect us."
+ },
+ "c3_l3": {
+  "en": "Commander! Earth is sending us an urgent message. But it has to cross space first."
+ },
+ "c3_prep": {
+  "en": "While we wait, how do we get ready?"
+ },
+ "c3_p_shield": {
+  "en": "Power up the shield"
+ },
+ "c3_p_shield_h": {
+  "en": "Moves power from the lab to the shield."
+ },
+ "c3_p_shelter": {
+  "en": "Carry supplies to the shelter"
+ },
+ "c3_p_shelter_h": {
+  "en": "If we must hide, we will have food and water there."
+ },
+ "c3_p_work": {
+  "en": "Keep working"
+ },
+ "c3_p_work_h": {
+  "en": "It might be nothing. More science for now."
+ },
+ "c3_msg": {
+  "en": "Mission Control: \"An X8.2 [[flare|flare]] just exploded on the Sun! A [[particle storm|sep]] may hit Mars. Take care!\""
+ },
+ "c3_late": {
+  "en": "Notice something? Earth saw the flare first, but their warning needed {min} minutes to reach us. Out here, we can't wait for Earth."
+ },
+ "c3_alarm": {
+  "en": "RADIATION ALARM! Particles are hitting the base!"
+ },
+ "c3_shelter": {
+  "en": "Everyone to the shelter!"
+ },
+ "c3_shelter_h": {
+  "en": "Thick rock and water walls stop most particles. Work stops."
+ },
+ "c3_stay": {
+  "en": "Keep working"
+ },
+ "c3_stay_h": {
+  "en": "Science keeps going, but the crew takes the full dose."
+ },
+ "c3_in1": {
+  "en": "We're in the lava tube. Rock above us, water tanks around us. The dose meter has calmed down."
+ },
+ "c3_in2": {
+  "en": "A NASA scientist said it best: if you knew an event like this was coming during a Mars walk, you would definitely want to take shelter."
+ },
+ "c3_out1": {
+  "en": "My meter is clicking like crazy... we got a big dose today."
+ },
+ "c3_aurora1": {
+  "en": "Wait... come outside and look up! The whole sky is glowing green!"
+ },
+ "c3_aurora2": {
+  "en": "The same particles made an [[aurora|aurora]]. In September 2017, NASA's MAVEN saw one more than 25 times brighter than any before, and Curiosity measured radiation over twice as high as ever."
+ },
+ "c3_s1": {
+  "en": "Survived the radiation storm"
+ },
+ "c3_s2": {
+  "en": "Went to the shelter in time"
+ },
+ "c3_s3": {
+  "en": "Prepared before the warning arrived"
+ },
+ "c3_real": {
+  "en": "On September 10–11, 2017, a big eruption on the Sun sent particles to Mars. Curiosity's RAD measured surface radiation more than twice as high as ever, for more than two days, and MAVEN saw a global aurora."
+ },
+ "c3_next": {
+  "en": "Next: Chapter 4 · The Biggest Storm (2024)"
+ },
+ "c4_kicker": {
+  "en": "CHAPTER 4"
+ },
+ "c4_sub": {
+  "en": "May 2024 · Kerem is outside"
+ },
+ "c4_l1": {
+  "en": "I found a rock with layers in it near the crater rim. It could hold clues about the old lake! I'm going out to get it."
+ },
+ "c4_l2": {
+  "en": "Be careful, Kerem. Earth says sunspot region AR 3664 is very active this month. It gave Earth its strongest storm in 20 years."
+ },
+ "c4_l3": {
+  "en": "I'm at the rock. It's beautiful! About 10 minutes to cut a sample."
+ },
+ "c4_msg": {
+  "en": "Mission Control: \"A huge flare, about X12, on the far side of the Sun. It's pointing at Mars. Particles may already be on the way!\""
+ },
+ "c4_q": {
+  "en": "Kerem is outside with no walls around him. Decide now!"
+ },
+ "c4_back": {
+  "en": "Call Kerem back now"
+ },
+ "c4_back_h": {
+  "en": "He leaves the rock behind. Safe, but we lose the sample."
+ },
+ "c4_finish": {
+  "en": "Let him finish"
+ },
+ "c4_finish_h": {
+  "en": "10 more minutes outside for a great discovery... and a big dose."
+ },
+ "c4_rover": {
+  "en": "Send the rover for the rock"
+ },
+ "c4_rover_h": {
+  "en": "Kerem runs back; the rover fetches the rock but uses a lot of power."
+ },
+ "c4_timeout": {
+  "en": "Kerem didn't hear an order and kept working!"
+ },
+ "c4_r_back": {
+  "en": "I'm running! ... I'm inside. My heart is racing, but I'm okay."
+ },
+ "c4_r_finish": {
+  "en": "Got it! ... but my dose meter is screaming. Coming in now."
+ },
+ "c4_r_rover": {
+  "en": "The rover has the rock! Kerem is safe. The batteries are low tonight."
+ },
+ "c4_in1": {
+  "en": "Everybody in the lava tube, now!"
+ },
+ "c4_in2": {
+  "en": "Curiosity measured this storm on May 20, 2024: 8,100 micrograys. That's like 30 chest X-rays at once, the biggest it ever saw. Out in the open, that's a lot."
+ },
+ "c4_in3": {
+  "en": "NASA says cliffs and lava tubes like ours give astronauts extra shielding. Good thing we built the shelter here."
+ },
+ "c4_end1": {
+  "en": "No science result is worth the crew's health. Remember that, Commander."
+ },
+ "c4_s1": {
+  "en": "Everyone survived"
+ },
+ "c4_s2": {
+  "en": "Kerem stayed safe"
+ },
+ "c4_s3": {
+  "en": "Saved the rock sample"
+ },
+ "c4_real": {
+  "en": "On May 20, 2024, a flare later estimated as X12 sent particles to Mars. Curiosity's RAD measured 8,100 micrograys, about 30 chest X-rays, the largest surge since it landed. MAVEN saw auroras across the planet."
+ },
+ "c4_next": {
+  "en": "Next: Chapter 5 · Today's Real Sun"
+ },
+ "c5_kicker": {
+  "en": "CHAPTER 5"
+ },
+ "c5_sub": {
+  "en": "Real NASA data · updated {date}"
+ },
+ "c5_l1": {
+  "en": "This mission is different. I just downloaded REAL data from NASA's DONKI space-weather database: everything the Sun did in the last 30 days."
+ },
+ "c5_l2": {
+  "en": "DONKI counts: {flr} flares, {cme} CMEs, {sep} particle storms, {gst} geomagnetic storms. Snapshot from {date}, updated once a day."
+ },
+ "c5_calm": {
+  "en": "The real Sun was calm this month. No big particle storms. A perfect time for science, but calm days are when you prepare for the next storm."
+ },
+ "c5_event": {
+  "en": "Real event: {type} on {date}. {extra}"
+ },
+ "c5_t_FLR": {
+  "en": "a class {cls} solar flare"
+ },
+ "c5_t_SEP": {
+  "en": "a solar particle storm"
+ },
+ "c5_t_CME": {
+  "en": "a coronal mass ejection (CME)"
+ },
+ "c5_t_GST": {
+  "en": "a geomagnetic storm at Earth"
+ },
+ "c5_x_FLR": {
+  "en": "Flares are flashes of light. The danger is the particles that may follow."
+ },
+ "c5_x_SEP": {
+  "en": "This is the dangerous kind. What do we do?"
+ },
+ "c5_x_CME": {
+  "en": "A cloud of solar gas. If it reaches Mars, we may see an aurora."
+ },
+ "c5_x_GST": {
+  "en": "That one hit Earth, not us. Mars has no global magnetic field to make a storm like that."
+ },
+ "c5_wake": {
+  "en": "Now share today's power for the base. Full sun: 10 ⚡."
+ },
+ "c5_end": {
+  "en": "You just survived the Sun as it REALLY behaved this month. NASA mission planners check this same DONKI data every day. Come back tomorrow: the Sun will be different."
+ },
+ "c5_s1": {
+  "en": "Survived today's real Sun"
+ },
+ "c5_s2": {
+  "en": "Kept the crew safe from every real event"
+ },
+ "c5_s3": {
+  "en": "Base fully powered"
+ },
+ "c5_real": {
+  "en": "Every event in this chapter came from NASA's DONKI database (snapshot {date}). DONKI is run by the Community Coordinated Modeling Center at NASA Goddard."
+ },
+ "c5_next": {
+  "en": "You finished the campaign! Replay any chapter to get 3 stars."
+ },
+ "donki_link": {
+  "en": "Open DONKI record"
+ },
+ "back": {
+  "en": "Back"
+ },
+ "who_plays": {
+  "en": "Who's playing?"
+ },
+ "who_sub": {
+  "en": "Every astronaut keeps their own progress on this device."
+ },
+ "pilot_delete": {
+  "en": "Delete astronaut"
+ },
+ "pilot_sure": {
+  "en": "Sure?"
+ },
+ "resume_ch": {
+  "en": "Continue Chapter {n}"
+ },
+ "all_done": {
+  "en": "All chapters done!"
+ },
+ "pilot_new": {
+  "en": "New astronaut"
+ },
+ "pilot_new_sub": {
+  "en": "For a friend or sibling"
+ },
+ "edit": {
+  "en": "Edit"
+ },
+ "pilot_switch": {
+  "en": "Switch astronaut"
+ },
+ "resume": {
+  "en": "▶ You left off here"
+ },
+ "grow_day": {
+  "en": "DAY {d} / {n}"
+ },
+ "grow_src": {
+  "en": "Real lettuce on the Space Station grew in 33–56 days (NASA OSDR · OSD-268). We fast-forward 33 days."
+ },
+ "grow_s0": {
+  "en": "Seeds planted"
+ },
+ "grow_s1": {
+  "en": "First sprouts"
+ },
+ "grow_s2": {
+  "en": "Leaves growing"
+ },
+ "grow_s3": {
+  "en": "Almost ready"
+ },
+ "grow_s4": {
+  "en": "Harvest!"
+ },
+ "c5_l2v": {
+  "en": "Here is what NASA's DONKI recorded around the Sun in the last thirty days. The snapshot is updated once a day."
+ },
+ "c5_ev_intro": {
+  "en": "Look at this real record from DONKI."
+ },
+ "mg_valve_v": {
+  "en": "The oxygen maker is starting! Keep the pressure needle in the green zone."
+ },
+ "mg_plants_v": {
+  "en": "Our plants need you! Tap the water drops and the light bulbs before they fade."
+ },
+ "mg_fold_v": {
+  "en": "The dust wall is coming! Fold every solar panel, quick!"
+ },
+ "mg_dish_v": {
+  "en": "Turn the dish until you find Earth, and hold the signal steady."
+ },
+ "mg_shelter_v": {
+  "en": "Particles are coming! Send everyone into the shelter, now!"
+ },
+ "mg_rover_v": {
+  "en": "Drive back to base! Jump over the rocks!"
+ },
+ "mm_i1": {
+  "en": "Welcome to Mars, Commander! Our job: survive ten sols, send science to Earth, and keep radiation low."
+ },
+ "mm_i2": {
+  "en": "Three things keep us alive: oxygen, power, and protection from radiation. You can never max out all three. Tap any meter to learn why."
+ },
+ "c1_trek": {
+  "en": "This is Jezero Crater, a real place: an old lake with a river delta. You can fly over it yourself in NASA Mars Trek."
+ },
+ "why_moxie": {
+  "en": "Why can we breathe? Our oxygen maker works like MOXIE on Perseverance. MOXIE made real oxygen from Mars air: 122 grams in total."
+ },
+ "why_rad": {
+  "en": "Even inside the base, space radiation reaches us: about 0.64 millisieverts every sol. Curiosity measures it every day."
+ },
+ "why_tau": {
+  "en": "On a normal day, the dust number in the sky is about 0.5. In 2018 it reached 10.8, and Opportunity's panels went dark."
+ },
+ "why_spirit": {
+  "en": "Wind can help too. In 2009 a gust cleaned Spirit's solar panels, and its power jumped."
+ },
+ "why_ochmo": {
+  "en": "Hiding in the shelter cuts a solar storm's dose about in half. Against cosmic rays it helps only a little."
+ },
+ "why_sep17": {
+  "en": "This really happened. In September 2017 a solar storm doubled the radiation on the surface of Mars."
+ },
+ "c4_cmp_v": {
+  "en": "How big was our dose? Let's compare it with real numbers."
+ },
+ "c4_cmp1": {
+  "en": "Curiosity measures about 6.4 millisieverts every ten sols, from cosmic rays alone."
+ },
+ "c4_cmp2": {
+  "en": "On the Space Station, crews get about 80 to 160 millisieverts in six months. NASA's RadLab shows the real readings."
+ },
+ "c4_cmp3": {
+  "en": "NASA's limit for a whole astronaut career is 600 millisieverts. That's why every shelter run matters."
+ },
+ "c5_job_v": {
+  "en": "The Sun has had its say. Now choose the crew's job for today."
+ },
+ "job_eva": {
+  "en": "Rocks tell the story of Mars. But outside there are no walls, so a solar storm hits you directly."
+ },
+ "job_gym": {
+  "en": "Good choice. In space, bones can lose 1 to 1.5 percent of their strength every month without exercise."
+ },
+ "job_plants": {
+  "en": "Plants are science and food. NASA grew radishes on the Space Station in just 27 days."
+ },
+ "job_fix": {
+  "en": "Machines checked. On Mars, a broken oxygen maker is the biggest danger of all."
+ },
+ "c5_src_live": {
+  "en": "This data came from NASA just now."
+ }
+}
