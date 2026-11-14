@@ -1,5 +1,13 @@
 # Mars Colony: Command Center · Red Sky Chronicles
 
+## ▶ Play now: https://grand-rolypoly-d1b762.netlify.app/
+
+**Slides:** https://canva.link/b1pf5qj6z3vv9ov · **Research (Colab):** https://colab.research.google.com/drive/1YlVNlJn4tZ8CwS-mM6pCxwo4xYGE2fwp?usp=sharing
+
+**Team Red Sky Crew:** Doğa Ülkü, Duru Derin Ülkü, Zeynep Sarıkaya
+
+---
+
 A story game for ages 7–12 (NASA Space Apps 2026 · "Build a Junior Astronaut Mission Trainer").
 Runs in any browser. No download, no account (several players can each keep their own astronaut and progress on one device). English, fully voiced.
 
