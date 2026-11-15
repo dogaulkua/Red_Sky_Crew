@@ -2,7 +2,7 @@
 
 ## ▶ Play now: https://grand-rolypoly-d1b762.netlify.app/
 
-**Slides:** https://canva.link/b1pf5qj6z3vv9ov · **Research (Colab):** https://colab.research.google.com/drive/1YlVNlJn4tZ8CwS-mM6pCxwo4xYGE2fwp?usp=sharing
+**Slides:** https://canva.link/dd9mw1rlls9q3s3 · **Research (Colab):** https://colab.research.google.com/drive/1YlVNlJn4tZ8CwS-mM6pCxwo4xYGE2fwp?usp=sharing
 
 **Team Red Sky Crew:** Doğa Ülkü, Duru Derin Ülkü, Zeynep Sarıkaya
 
