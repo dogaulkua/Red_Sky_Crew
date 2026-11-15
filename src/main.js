@@ -1,4 +1,3 @@
-// Parts of this code were written with help from an AI coding assistant (see README "Use of AI").
 import { loadText, setLang, profile, suitImage, save } from './core.js?v=2026-11-15d';
 import { mount, applyFontScale } from './ui.js?v=2026-11-15d';
 import { director, preloadAll, Land, Descent, Wake, Green, Shelter } from './scenes.js?v=2026-11-15d';
